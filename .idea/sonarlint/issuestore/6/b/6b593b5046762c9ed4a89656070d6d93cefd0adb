@@ -1,0 +1,17 @@
+
+e
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ğÄâÿ8—ØÕà¿/
+l
+java:S4488#"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ßƒµ¢şÿÿÿÿ8™ØÕà¿/
+e
+java:S4488."HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(Õç¼ñ8šØÕà¿/
+k
+java:S44889"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(•“ÛÏ8›ØÕà¿/
+e
+java:S4488@"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Æøîç8›ØÕà¿/
+^
+java:S1612C"<Replace this lambda with method reference 'ClienteDTO::new'.(À™€ıÿÿÿÿ8äˆÀ/
+e
+java:S4488H"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ñÀÈó8œØÕà¿/
+^
+java:S1612O"<Replace this lambda with method reference 'ClienteDTO::new'.(³”Šüÿÿÿÿ8èˆÀ/
