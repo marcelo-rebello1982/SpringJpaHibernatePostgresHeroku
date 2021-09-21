@@ -13,7 +13,7 @@ import java.text.ParseException;
 
 
 @Configuration
-@Profile("dev")
+@Profile("hlg")
 public class DevConfig {
 
     @Autowired
