@@ -1,0 +1,17 @@
+
+^
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ðÄâÿ
+e
+java:S4488 "JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ßƒµ¢þÿÿÿÿ
+^
+java:S4488*"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(Õç¼ñ
+d
+java:S44885"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(•“ÛÏ
+^
+java:S4488;"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Æøîç
+T
+java:S1612>">Replace this lambda with method reference 'CategoriaDTO::new'.(èÕéŠ
+^
+java:S4488B"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ñÀÈó
+T
+java:S1612J">Replace this lambda with method reference 'CategoriaDTO::new'.(‰’†í
