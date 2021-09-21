@@ -19569,4 +19569,454 @@ Consider defining a bean of type 'com.heroku.demo.service.EmailService' in your 
     drop table if exists sistema.telefone cascade
 ""21-09-2021 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 ""21-09-2021 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""21-09-2021 [restartedMain] INFO  c.h.d.SpringJpaPostgreHibernateHerokuApplication - Starting SpringJpaPostgreHibernateHerokuApplication using Java 11.0.12 on Server with PID 11276 (D:\Projetos JAVA\Workspace\SpringJPA-Postgres-HIbernate-Heroku\target\classes started by Marcelo in D:\Projetos JAVA\Workspace\SpringJPA-Postgres-HIbernate-Heroku)
+""21-09-2021 [restartedMain] INFO  c.h.d.SpringJpaPostgreHibernateHerokuApplication - The following profiles are active: hlg
+""21-09-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""21-09-2021 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 389 ms. Found 9 JPA repository interfaces.
+""21-09-2021 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@468265e2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""21-09-2021 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""21-09-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""21-09-2021 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""21-09-2021 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+""21-09-2021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""21-09-2021 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3748 ms
+""21-09-2021 [restartedMain] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+""21-09-2021 [restartedMain] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+""21-09-2021 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 7.7.3 by Redgate
+""21-09-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""21-09-2021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""21-09-2021 [restartedMain] INFO  o.f.c.i.database.base.DatabaseType - Database: jdbc:postgresql://localhost:5432/hlg (PostgreSQL 12.8)
+""21-09-2021 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.030s)
+""21-09-2021 [restartedMain] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+""21-09-2021 [restartedMain] INFO  o.f.c.i.s.DefaultSqlScriptExecutor - 0 rows affected
+""21-09-2021 [restartedMain] INFO  o.f.c.i.s.DefaultSqlScriptExecutor - 0 rows affected
+""21-09-2021 [restartedMain] INFO  o.f.c.i.s.DefaultSqlScriptExecutor - 0 rows affected
+""21-09-2021 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+""21-09-2021 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1.1 - create tables"
+""21-09-2021 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v1.1 (execution time 00:00.031s)
+""21-09-2021 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""21-09-2021 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+""21-09-2021 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""21-09-2021 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.cidade 
+       drop constraint if exists FKkworrwk40xj58kevvh3evi500
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "cidade" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.endereco 
+       drop constraint if exists FK8b1kcb3wucapb8dejshyn5fsx
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "endereco" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.endereco 
+       drop constraint if exists FK8s7ivtl4foyhrfam9xqom73n9
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "endereco" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.item_pedido 
+       drop constraint if exists FKtk55mn6d6bvl5h0no5uagi3sf
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_pedido" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.item_pedido 
+       drop constraint if exists FK60ym08cfoysa17wrn1swyiuda
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_pedido" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pagamento 
+       drop constraint if exists FKthad9tkw4188hb3qo1lm5ueb0
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pagamento" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pagamento_com_boleto 
+       drop constraint if exists FKcr74vrxf8nfph0knq2bho8doo
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pagamento_com_boleto" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pagamento_com_cartao 
+       drop constraint if exists FKta3cdnuuxclwfh52t4qi432ow
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pagamento_com_cartao" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pedido 
+       drop constraint if exists FK30s8j2ktpay6of18lbyqn3632
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pedido" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pedido 
+       drop constraint if exists FK1fihyy2fnocpuwc74674qmfkv
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pedido" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.perfis 
+       drop constraint if exists FKsobr8hl9guwr8775lyl1mncg2
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "perfis" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.produto_categoria 
+       drop constraint if exists FKq3g33tp7xk2juh53fbw6y4y57
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "produto_categoria" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.produto_categoria 
+       drop constraint if exists FK1c0y58d3n6x3m6euv2j3h64vt
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "produto_categoria" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.telefone 
+       drop constraint if exists FK8aafha0njkoyoe3kvrwsy3g8u
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "telefone" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.categoria cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "categoria" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.cidade cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "cidade" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.cliente cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "cliente" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.endereco cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "endereco" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.estado cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "estado" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.item_pedido cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item_pedido" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.pagamento cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pagamento" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.pagamento_com_boleto cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pagamento_com_boleto" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.pagamento_com_cartao cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pagamento_com_cartao" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.pedido cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pedido" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.perfis cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "perfis" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.produto cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "produto" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.produto_categoria cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "produto_categoria" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    drop table if exists sistema.telefone cascade
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+""21-09-2021 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "telefone" does not exist, skipping
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.categoria (
+       id int4 generated by default as identity,
+        nome varchar(255),
+        primary key (id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.cidade (
+       id int4 generated by default as identity,
+        nome varchar(255),
+        estado_id int4,
+        primary key (id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.cliente (
+       id int4 generated by default as identity,
+        cpf_ou_cnpj varchar(255),
+        email varchar(255),
+        nome varchar(255),
+        senha varchar(255),
+        tipo int4,
+        primary key (id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.endereco (
+       id int4 generated by default as identity,
+        bairro varchar(255),
+        cep varchar(255),
+        complemento varchar(255),
+        logradouro varchar(255),
+        numero varchar(255),
+        cidade_id int4,
+        cliente_id int4,
+        primary key (id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.estado (
+       id int4 generated by default as identity,
+        nome varchar(255),
+        primary key (id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.item_pedido (
+       desconto float8,
+        preco float8,
+        quantidade int4,
+        produto_id int4 not null,
+        pedido_id int4 not null,
+        primary key (pedido_id, produto_id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.pagamento (
+       pedido_id int4 not null,
+        estado int4,
+        primary key (pedido_id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.pagamento_com_boleto (
+       data_pagamento timestamp,
+        data_vencimento timestamp,
+        pedido_id int4 not null,
+        primary key (pedido_id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.pagamento_com_cartao (
+       numero_de_parcelas int4,
+        pedido_id int4 not null,
+        primary key (pedido_id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.pedido (
+       id int4 generated by default as identity,
+        instante timestamp,
+        cliente_id int4,
+        endereco_de_entrega_id int4,
+        primary key (id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.perfis (
+       cliente_id int4 not null,
+        perfis int4
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.produto (
+       id int4 generated by default as identity,
+        nome varchar(255),
+        preco float8,
+        primary key (id)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.produto_categoria (
+       produto_id int4 not null,
+        categoria_id int4 not null
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    create table sistema.telefone (
+       cliente_id int4 not null,
+        telefones varchar(255)
+    )
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.cliente 
+       add constraint UK_cmxo70m08n43599l3h0h07cc6 unique (email)
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.cidade 
+       add constraint FKkworrwk40xj58kevvh3evi500 
+       foreign key (estado_id) 
+       references sistema.estado
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.endereco 
+       add constraint FK8b1kcb3wucapb8dejshyn5fsx 
+       foreign key (cidade_id) 
+       references sistema.cidade
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.endereco 
+       add constraint FK8s7ivtl4foyhrfam9xqom73n9 
+       foreign key (cliente_id) 
+       references sistema.cliente
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.item_pedido 
+       add constraint FKtk55mn6d6bvl5h0no5uagi3sf 
+       foreign key (produto_id) 
+       references sistema.produto
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.item_pedido 
+       add constraint FK60ym08cfoysa17wrn1swyiuda 
+       foreign key (pedido_id) 
+       references sistema.pedido
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pagamento 
+       add constraint FKthad9tkw4188hb3qo1lm5ueb0 
+       foreign key (pedido_id) 
+       references sistema.pedido
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pagamento_com_boleto 
+       add constraint FKcr74vrxf8nfph0knq2bho8doo 
+       foreign key (pedido_id) 
+       references sistema.pagamento
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pagamento_com_cartao 
+       add constraint FKta3cdnuuxclwfh52t4qi432ow 
+       foreign key (pedido_id) 
+       references sistema.pagamento
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pedido 
+       add constraint FK30s8j2ktpay6of18lbyqn3632 
+       foreign key (cliente_id) 
+       references sistema.cliente
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.pedido 
+       add constraint FK1fihyy2fnocpuwc74674qmfkv 
+       foreign key (endereco_de_entrega_id) 
+       references sistema.endereco
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.perfis 
+       add constraint FKsobr8hl9guwr8775lyl1mncg2 
+       foreign key (cliente_id) 
+       references sistema.cliente
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.produto_categoria 
+       add constraint FKq3g33tp7xk2juh53fbw6y4y57 
+       foreign key (categoria_id) 
+       references sistema.categoria
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.produto_categoria 
+       add constraint FK1c0y58d3n6x3m6euv2j3h64vt 
+       foreign key (produto_id) 
+       references sistema.produto
+""21-09-2021 [restartedMain] DEBUG org.hibernate.SQL - 
+    
+    alter table if exists sistema.telefone 
+       add constraint FK8aafha0njkoyoe3kvrwsy3g8u 
+       foreign key (cliente_id) 
+       references sistema.cliente
+""21-09-2021 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""21-09-2021 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""21-09-2021 [restartedMain] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.h.d.c.AuthResource:
+	{POST [/auth/refresh_token]}: refreshToken(HttpServletResponse)
+""21-09-2021 [restartedMain] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.h.d.c.CategoriaResource:
+	{PUT [/categorias/{id}]}: update(CategoriaDTO,Integer)
+	{DELETE [/categorias/{id}]}: delete(Integer)
+	{POST [/categorias]}: insert(CategoriaDTO)
+	{GET [/categorias/{id}]}: find(Integer)
+	{GET [/categorias]}: findAll()
+	{GET [/categorias/page]}: findPage(Integer,Integer,String,String)
+""21-09-2021 [restartedMain] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.h.d.c.ClienteResource:
+	{PUT [/clientes/{id}]}: update(ClienteDTO,Integer)
+	{DELETE [/clientes/{id}]}: delete(Integer)
+	{POST [/clientes]}: insert(ClienteNewDTO)
+	{GET [/clientes/{id}]}: find(Integer)
+	{GET [/clientes]}: findAll()
+	{GET [/clientes/page]}: findPage(Integer,Integer,String,String)
+""21-09-2021 [restartedMain] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.h.d.c.PedidoResource:
+	{POST [/pedidos]}: insert(Pedido)
+	{GET [/pedidos/{id}]}: find(Integer)
+	{GET [/pedidos]}: findPage(Integer,Integer,String,String)
+""21-09-2021 [restartedMain] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.h.d.c.ProdutoResource:
+	{GET [/produtos/{id}]}: find(Integer)
+	{GET [/produtos]}: findPage(String,String,Integer,Integer,String,String)
+""21-09-2021 [restartedMain] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+	{ [/swagger-resources]}: swaggerResources()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+""21-09-2021 [restartedMain] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+""21-09-2021 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 23 mappings in 'requestMappingHandlerMapping'
+""21-09-2021 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2af62a01, org.springframework.security.web.context.SecurityContextPersistenceFilter@288dfe17, org.springframework.security.web.header.HeaderWriterFilter@3ee09b5d, org.springframework.web.filter.CorsFilter@1d00c668, org.springframework.security.web.authentication.logout.LogoutFilter@73a7f32f, com.heroku.demo.security.JWTAuthenticationFilter@56ffe03c, com.heroku.demo.security.JWTAuthorizationFilter@11ea908b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50465d7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25be297f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a571695, org.springframework.security.web.session.SessionManagementFilter@6643ba83, org.springframework.security.web.access.ExceptionTranslationFilter@6ed524a6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@356f2823]
+""21-09-2021 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""21-09-2021 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""21-09-2021 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""21-09-2021 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""21-09-2021 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+""21-09-2021 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+""21-09-2021 [restartedMain] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+""21-09-2021 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+""21-09-2021 [restartedMain] WARN  o.s.b.a.g.t.GroovyTemplateAutoConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+""21-09-2021 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""21-09-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""21-09-2021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+""21-09-2021 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findUsingGET_1
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findPageUsingGET_1
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findUsingGET_2
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findPageUsingGET_2
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_2
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findUsingGET_3
+""21-09-2021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findPageUsingGET_3
+""21-09-2021 [restartedMain] INFO  c.h.d.SpringJpaPostgreHibernateHerokuApplication - Started SpringJpaPostgreHibernateHerokuApplication in 14.48 seconds (JVM running for 15.676)
 "
