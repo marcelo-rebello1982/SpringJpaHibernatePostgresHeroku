@@ -22,6 +22,13 @@ public class DataBaseConfig {
     @Value("${spring.jpa.hibernate.ddl-auto}")
     private String strategy;
 
+   // @Value("${db.name}")
+   // private String dbName;
+
+  //  @Value("${mq.address}")
+   // private String mqAddress;
+
+
 
     @Bean
     public boolean instantiateDatabase() throws ParseException {
